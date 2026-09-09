@@ -3,7 +3,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div>
+    <Box minH="100vh" bg="white" color="fg">
       <Grid
         templateAreas={{
           base: `"nav" "main"`,
@@ -20,7 +20,7 @@ function App() {
           Main
         </GridItem>
       </Grid>
-    </div>
+    </Box>
   );
 }
 
