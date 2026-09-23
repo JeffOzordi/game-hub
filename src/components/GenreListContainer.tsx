@@ -7,7 +7,7 @@ interface Props {
 
 const GenreListContainer = ({ children }: Props) => {
   return (
-    <Box  paddingY="5px" listStyle="none">
+    <Box  paddingY="12px" listStyle="none">
         {children}
     </Box>
   )
