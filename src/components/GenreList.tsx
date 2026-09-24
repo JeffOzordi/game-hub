@@ -40,6 +40,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
                 <Text
                   whiteSpace="wrap"
                   textAlign="left"
+                  cursor='pointer'
                   fontWeight={
                     genre.id === selectedGenre?.id ? 'bold' : 'normal'
                   }
