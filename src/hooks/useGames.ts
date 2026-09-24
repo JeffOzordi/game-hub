@@ -1,15 +1,9 @@
 import type { GameQuery } from '@/App';
 import { useQuery } from '@tanstack/react-query';
 import apiClients, { type FetchResponse } from "@/services/apiClients";
+import type { Platform } from './usePlatforms';
 
 
-export interface Platform {
-  id: number;
-  name: string;
-  slug: string;
-}
-
-//! REFACTOR: duplicate defintion for interface platform
 export interface Game {
   id: number;
   name: string;

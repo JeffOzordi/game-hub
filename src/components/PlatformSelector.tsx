@@ -1,5 +1,4 @@
-import type { Platform } from '@/hooks/useGames';
-import usePlatforms from '@/hooks/usePlatforms';
+import usePlatforms, { type Platform } from '@/hooks/usePlatforms';
 import { Button, Menu, MenuItem, Portal } from '@chakra-ui/react';
 import { LuChevronDown } from 'react-icons/lu';
 
