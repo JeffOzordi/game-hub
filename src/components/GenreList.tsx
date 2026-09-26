@@ -12,10 +12,10 @@ import {
 import GenreListContainer from './GenreListContainer';
 interface Props {
   onSelectGenre: (genre: Genre) => void;
-  selectedGenre: Genre | null;
+  selectedGenreId?: number;
 }
 
-const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
+const GenreList = ({ selectedGenreId, onSelectGenre }: Props) => {
   const { data, error} = useGenres();
   // const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
@@ -42,7 +42,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
                   textAlign="left"
                   cursor='pointer'
                   fontWeight={
-                    genre.id === selectedGenre?.id ? 'bold' : 'normal'
+                    genre.id === selectedGenreId ? 'bold' : 'normal'
                   }
                   onClick={() => onSelectGenre(genre)}
                   fontSize="lg"
