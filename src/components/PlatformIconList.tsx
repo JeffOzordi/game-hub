@@ -9,7 +9,7 @@ import {
 import { MdPhoneIphone } from 'react-icons/md';
 import { SiNintendo } from 'react-icons/si';
 import { BsGlobe } from 'react-icons/bs';
-import { type Platform } from '@/hooks/usePlatforms';
+import { type Platform } from '@/entities/Platform';
 import { HStack, Icon } from '@chakra-ui/react';
 import type { IconType } from 'react-icons';
 
@@ -35,10 +35,10 @@ const PlatformIconList = ({ platforms }: Props) => {
       {platforms.map((platform) => {
         // console.log("PLATFORM: ", platform.slug)
         const IconComponent = iconMap[platform.slug];
-        if (!IconComponent) return null
+        if (!IconComponent) return null;
 
         return (
-          <Icon key={platform.id} color='gray.500'>
+          <Icon key={platform.id} color="gray.500">
             {IconComponent && <IconComponent />}
           </Icon>
         );
