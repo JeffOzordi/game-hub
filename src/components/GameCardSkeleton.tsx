@@ -9,6 +9,8 @@ const GameCardSkeleton = () => {
       </CardBody>
     </CardRoot>
   );
+
+
 };
 
 export default GameCardSkeleton;
