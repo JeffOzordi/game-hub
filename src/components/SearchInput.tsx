@@ -10,7 +10,7 @@ const SearchInput = () => {
   const navigate = useNavigate()
 
   return (
-    <form  onChange={(event) => {
+    <form  onSubmit={(event) => {
       event.preventDefault()
       if (ref.current) {
         setSearchText(ref.current.value)
