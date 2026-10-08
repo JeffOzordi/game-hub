@@ -1,78 +1,53 @@
-# React + TypeScript + Vite
+# 🎮 Game Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive game discovery web application built with React and TypeScript. Game Hub allows users to explore a large collection of games, browse by genre and platform, search for specific titles, and sort games based on different criteria.
 
-Currently, two official plugins are available:
+The project was built to strengthen my understanding of modern React development, API integration, state management, custom hooks, responsive UI design, and reusable components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🎮 Browse a large collection of games
+- 🔍 Search for games by name
+- 🎭 Filter games by genre
+- 🖥️ Filter games by platform
+- ⭐ Sort games by popularity, rating, and other criteria
+- ♾️ Infinite scrolling for loading more games
+- 💀 Skeleton loading states for a better user experience
+- 📱 Responsive design for different screen sizes
+- ⚡ Fast API requests with Axios and React Query
+- 🎨 Modern UI built with Chakra UI
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Tech Stack
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- **React**
+- **TypeScript**
+- **Vite**
+- **Chakra UI**
+- **React Query**
+- **Axios**
+- **RAWG Video Games Database API**
+- **React Icons**
 
-## Expanding the ESLint configuration
+## 🧠 What I Learned
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project helped me improve my understanding of:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Building reusable React components
+- Creating and using custom hooks
+- Fetching and managing server-side data
+- Working with REST APIs
+- Managing application state
+- TypeScript interfaces and type safety
+- Conditional rendering and loading states
+- Infinite scrolling and pagination
+- Responsive layouts
+- Component composition
+- Working with third-party UI libraries
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ⚙️ Getting Started
 
-```
+### 1. Clone the repository
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+```bash
+git clone https://github.com/JeffOzordi/game-hub.git
